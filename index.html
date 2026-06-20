@@ -1,350 +1,229 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Studio de Depilação</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio de Depilação</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css/style.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css/style.css">
 </head>
 
 <body>
 
-<header>
-<nav>
-
-<div class="logo">Depilação Studio</div>
-
-<ul>
-<li><a href="#sobre">Sobre</a></li>
-<li><a href="#servicos">Serviços</a></li>
-<li><a href="#valores">Valores</a></li>
-<li><a href="#profissional">Profissional</a></li>
-<li><a href="#agendar">Agendar</a></li>
-</ul>
-
-</nav>
-</header>
-
-<section class="hero">
-
-<div class="hero-content">
-
-<h1>Depilação com Cera</h1>
-
-<p>Pele lisa, macia e bem cuidada por mais tempo.</p>
-
-<a href="#agendar" class="btn">
-Agendar Horário
-</a>
-
-</div>
-
-</section>
-
-<section id="sobre">
-
-<div class="container">
-
-<h2 class="section-title">
-Sobre a Depilação
-</h2>
-
-<div class="about">
-
-<img src="Cerareal.png">
-
-<div>
-
-<p>
-A depilação com cera remove os pelos pela raiz,
-proporcionando uma pele mais lisa e suave por semanas.
-Utilizamos produtos de qualidade e técnicas que garantem
-maior conforto durante o procedimento.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="servicos">
-
-<div class="container">
-
-<h2 class="section-title">
-Serviços
-</h2>
-
-<div class="services">
-<div class="card">
-<img src="imagens/pernas.jpg" alt="depilação de axilas">
-<div class="card-content">
-<h3>Pernas</h3>
-<p>Depilação completa ou meia perna.</p>
-</div>
-</div>
-
-<div class="card">
-<img src="imagens/axilass.jpg" alt="depilação de Axilas">
-<div class="card-content">
-<h3>Axilas</h3>
-<p>Procedimento rápido e eficaz.</p>
-</div>
-</div>
-
-<div class="card">
-<img src="imagens/rosto.jpg" alt="depilação de rosto">
-<div class="card-content">
-<h3>Rosto</h3>
-<p>Buço, sobrancelha e rosto completo.</p>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="valores" class="pricing">
-
-<div class="container">
-
-<h2 class="section-title">
-Tabela de Preços
-</h2>
-
-<div class="price-card">
-
-<img src="imagens/tabelaPrecos.png" alt="tabela de Preços>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="profissional">
-
-<div class="container">
-
-<h2 class="section-title">
-Conheça a Profissional
-</h2>
-
-<div class="professional">
-
-<img src="imagens/profissional.png" alt="Foto da profissiona">
-
-<div>
-
-<h3>Iracema Lopes de Moura</h3>
-
-<br>
-
-<p>
-Especialista em depilação com cera, combino técnicas modernas e biossegurança para garantir um procedimento seguro, rápido e com o máximo de conforto. Meu compromisso é cuidar da saúde da sua pele, proporcionando um toque suave, bem-estar e a autoconfiança que você merece. Venha vivenciar um momento de cuidado exclusivo em um espaço totalmente preparado para você.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<div class="container">
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<div class="container">
-
-<h2 class="section-title">
-Avaliações
-</h2>
-
-<div class="testimonials">
-
-<div class="testimonial">
-⭐⭐⭐⭐⭐
-<p>Excelente atendimento e muito profissional.</p>
-</div>
-
-<div class="testimonial">
-⭐⭐⭐⭐⭐
-<p>Ambiente confortável e atendimento impecável.</p>
-</div>
-
-<div class="testimonial">
-⭐⭐⭐⭐⭐
-<p>Minha depiladora favorita.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="agendar" class="booking">
-
-<div class="container">
-
-<h2 class="section-title">
-Agendar Horário
-</h2>
-
-<div class="booking-grid">
-
-<form id="bookingForm">
-
-<input
-type="text"
-id="nome"
-placeholder="Seu nome"
-required>
-
-<input
-type="tel"
-id="telefone"
-placeholder="Telefone"
-required>
-
-<select id="servico" required>
-
-<option value="">
-Escolha um serviço
-</option>
-
-<option>Perna Inteira</option>
-<option>Meia Perna</option>
-<option>Contorno Completo</option>
-<option>Contorno Simples</option>
-<option>Axilas</option>
-<option>Buço</option>
-<option>Barriga</option>
-<option>Costas</option>
-<option>Braços</option>
-<option>Coxa</option>
-
-</select>
-
-<input
-type="date"
-id="data"
-required>
-
-<input
-type="time"
-id="hora"
-required>
-
-<button type="submit">
-Agendar pelo WhatsApp
-</button>
-
-</form>
-
-<div class="map-box">
-
-<iframe
-src="https://maps.google.com/maps?q=Asa%20Sul%20Brasilia%20DF&t=&z=15&ie=UTF8&iwloc=&output=embed"
-loading="lazy"
-allowfullscreen>
-</iframe>
-
-<div class="location-info">
-
-<h3>📍 Nossa Localização</h3>
-
-<p><strong>Studio de Depilação</strong></p>
-
-<p>Asa Sul - Brasília/DF</p>
-
-<p>Atendimento com hora marcada.</p>
-
-<p>WhatsApp: (61) 99999-9999</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<footer>
-
-<h3>Studio de Depilação</h3>
-
-<p>WhatsApp: (61) 99999-9999</p>
-
-<p>Instagram: @seuinstagram</p>
-
-<p>©️ 2026 Todos os direitos reservados</p>
-
-</footer>
-
-<script>
-
-document
-.getElementById("bookingForm")
-.addEventListener("submit", function(e){
-
-e.preventDefault();
-
-const nome =
-document.getElementById("nome").value;
-
-const telefone =
-document.getElementById("telefone").value;
-
-const servico =
-document.getElementById("servico").value;
-
-const data =
-document.getElementById("data").value;
-
-const hora =
-document.getElementById("hora").value;
-
-const mensagem =
-`Olá! Gostaria de agendar um horário.
-
-Nome: ${nome}
-Telefone: ${telefone}
-Serviço: ${servico}
-Data: ${data}
-Horário: ${hora}`;
-
-const numero = "5561999999999";
-
-window.open(
-`https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`,
-"_blank"
-);
-
-});
-
-</script>
+    <header>
+        <nav>
+            <div class="logo">Depilação Studio</div>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#valores">Valores</a></li>
+                <li><a href="#profissional">Profissional</a></li>
+                <li><a href="#agendar">Agendar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Depilação com Cera</h1>
+            <p>Pele lisa, macia e bem cuidada por mais tempo.</p>
+            <a href="#agendar" class="btn">Agendar Horário</a>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <div class="container">
+            <h2 class="section-title">Sobre a Depilação</h2>
+            <div class="about">
+                <img src="imagens/Cerareal.png" alt="Cera de depilação">
+                <div>
+                    <p>
+                        A depilação com cera remove os pelos pela raiz,
+                        proporcionando uma pele mais lisa e suave por semanas.
+                        Utilizamos produtos de qualidade e técnicas que garantem
+                        maior conforto durante o procedimento.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos">
+        <div class="container">
+            <h2 class="section-title">Serviços</h2>
+            <div class="slider-wrapper">
+                <div class="slider-track">
+                    <div class="slide">
+                        <div class="card">
+                            <img src="imagens/pernas.jpg" alt="Depilação de Pernas">
+                            <div class="card-content">
+                                <h3>Pernas</h3>
+                                <p>Depilação completa ou meia perna.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="card">
+                            <img src="imagens/axilass.jpg" alt="Depilação de Axilas">
+                            <div class="card-content">
+                                <h3>Axilas</h3>
+                                <p>Procedimento rápido e eficaz.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="card">
+                            <img src="imagens/rosto.jpg" alt="Depilação de Rosto">
+                            <div class="card-content">
+                                <h3>Rosto</h3>
+                                <p>Buço, sobrancelha e rosto completo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="card">
+                            <img src="imagens/pernas.jpg" alt="Depilação de Pernas">
+                            <div class="card-content">
+                                <h3>Pernas</h3>
+                                <p>Depilação completa ou meia perna.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="card">
+                            <img src="imagens/axilass.jpg" alt="Depilação de Axilas">
+                            <div class="card-content">
+                                <h3>Axilas</h3>
+                                <p>Procedimento rápido e eficaz.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="card">
+                            <img src="imagens/rosto.jpg" alt="Depilação de Rosto">
+                            <div class="card-content">
+                                <h3>Rosto</h3>
+                                <p>Buço, sobrancelha e rosto completo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="valores" class="pricing-section">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços e Valores</h2>
+            <div class="pricing-grid">
+                <div class="price-card featured">
+                    <div>
+                        <h3 class="plan-name">Rosto & Detalhes</h3>
+                        <ul class="plan-features">
+                            <li>Buço <span class="price-value">R$ 20,00</span></li>
+                            <li>Axilas <span class="price-value">R$ 25,00</span></li>
+                            <li>Braços <span class="price-value">R$ 30,00</span></li>
+                        </ul>
+                    </div>
+                    <a href="#agendar" class="plan-btn">Agendar Agora</a>
+                </div>
+                <div class="price-card featured">
+                    <div>
+                        <h3 class="plan-name">corpo</h3>
+                        <ul class="plan-features">
+                            <li>Contorno Simples <span class="price-value">R$ 35,00</span></li>
+                            <li>Barriga <span class="price-value">R$ 40,00</span></li>
+                            <li>Costas <span class="price-value">R$ 40,00</span></li>
+                        </ul>
+                    </div>
+                    <a href="#agendar" class="plan-btn">Agendar Agora</a>
+                </div>
+                <div class="price-card featured">
+                    <div>
+                        <h3 class="plan-name">Membros Inferiores</h3>
+                        <ul class="plan-features">
+                            <li>Meia Perna <span class="price-value">R$ 45,00</span></li>
+                            <li>Coxa <span class="price-value">R$ 50,00</span></li>
+                            <li>Perna Inteira <span class="price-value">R$ 90,00</span></li>
+                        </ul>
+                    </div>
+                    <a href="#agendar" class="plan-btn">Agendar Agora</a>
+                </div>
+                <div class="price-card featured">
+                    <div>
+                        <h3 class="plan-name">Íntimo</h3>
+                        <ul class="plan-features">
+                            <li>Contorno Completo <span class="price-value">R$ 50,00</span></li>
+                        </ul>
+                    </div>
+                    <a href="#agendar" class="plan-btn">Agendar Agora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="profissional">
+        <div class="container">
+            <h2 class="section-title">Conheça a Profissional</h2>
+            <div class="professional">
+                <img src="imagens/profissional.png" alt="Foto da profissional">
+                <div>
+                    <h3>Iracema Lopes de Moura</h3>
+                    <br>
+                    <p>
+                        Especialista em depilação com cera, combino técnicas modernas e biossegurança para garantir um procedimento seguro, rápido e com o máximo de conforto. Meu compromisso é cuidar da saúde da sua pele, proporcionando um toque suave, bem-estar e a autoconfiança que você merece. Venha vivenciar um momento de cuidado exclusivo em um espaço totalmente preparado para você.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="agendar" class="booking">
+        <div class="container">
+            <h2 class="section-title">Agendar Horário</h2>
+            <div class="booking-grid">
+                <form id="bookingForm">
+                    <input type="text" id="nome" placeholder="Seu nome" required>
+                    <input type="tel" id="telefone" placeholder="Telefone" required>
+                    <select id="servico" required>
+                        <option value="">Escolha um serviço</option>
+                        <option>Perna Inteira</option>
+                        <option>Meia Perna</option>
+                        <option>Contorno Completo</option>
+                        <option>Contorno Simples</option>
+                        <option>Axilas</option>
+                        <option>Buço</option>
+                        <option>Barriga</option>
+                        <option>Costas</option>
+                        <option>Braços</option>
+                        <option>Coxa</option>
+                    </select>
+                    <input type="date" id="data">
+                    <button type="submit">Agendar pelo WhatsApp</button>
+                </form>
+                <div class="map-box">
+                    <iframe src="https://maps.google.com/maps?q=Asa%20Sul%20Brasilia%20DF&t=&z=15&ie=UTF8&iwloc=&output=embed" loading="lazy" allowfullscreen></iframe>
+                    <div class="location-info">
+                        <h3>Nossa Localização</h3>
+                        <p><strong>Studio de Depilação</strong></p>
+                        <p>Asa Sul - Brasília/DF</p>
+                        <p>Atendimento com hora marcada.</p>
+                        <p>WhatsApp: (61) 999013582</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h3>Studio de Depilação</h3>
+        <p>WhatsApp: (61) 999013582</p>
+        <p>Instagram: @iracema6357</p>
+        <p>© 2026 Todos os direitos reservados</p>
+    </footer>
+
+    <script src="js/"></script>
 
 </body>
 </html>
