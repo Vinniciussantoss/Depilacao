@@ -40,7 +40,6 @@ const mensagem =
 *Nome:* ${nome}
 *Telefone:* ${telefone}
 *Serviço:* ${servico}
-*Data:* ${dataFormatada}
 
 *Observações:*
 ${observacoes}`;
