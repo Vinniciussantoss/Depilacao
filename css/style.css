@@ -401,8 +401,8 @@ button:hover {
 }
 
 footer {
-    background: #2b1f21;
-    color: #f7e6e8;
+    background-color: #8E5B4F; /* marrom */
+    color: #fff;
     text-align: center;
     padding: 40px;
 }
