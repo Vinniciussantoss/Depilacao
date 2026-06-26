@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio de Depilação</title>
@@ -10,10 +12,11 @@
 </head>
 
 <body>
+    <div id="progresso"></div>
 
     <header>
         <nav>
-            <div class="logo">Depilação Studio</div>
+            <div class="logo">Depilação Beauty</div>
             <ul>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#servicos">Serviços</a></li>
@@ -21,16 +24,68 @@
                 <li><a href="#profissional">Profissional</a></li>
                 <li><a href="#agendar">Agendar</a></li>
             </ul>
+            <div class="theme-switch">
+    <input type="checkbox" id="darkModeBtn">
+    <label for="darkModeBtn">
+        <span class="sun"></span>
+        <span class="moon"></span>
+    </label>
+</div>
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Depilação com Cera</h1>
-            <p>Pele lisa, macia e bem cuidada por mais tempo.</p>
-            <a href="#agendar" class="btn">Agendar Horário</a>
+   <section class="hero">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <div class="hero-text">
+
+            
+
+            <h1>
+                Depilação<br>
+                <span>com Cera</span>
+            </h1>
+
+            <p>
+                Pele lisa, macia e bem cuidada por muito mais tempo.
+            </p>
+
+            <div class="hero-benefits">
+                <div>
+                     Atendimento humanizado
+                </div>
+
+                <div>
+                     Segurança e higiene
+                </div>
+
+                <div>
+                     Resultados duradouros
+                </div>
+            </div>
+
+            <div class="hero-buttons">
+                <a href="#agendar" class="btn">
+                    Agendar Horário
+                </a>
+
+                <a href="#servicos" class="btn-outline">
+                    Ver Serviços
+                </a>
+            </div>
+
         </div>
-    </section>
+
+    </div>
+    <div class="hero-wave">
+    <svg viewBox="0 0 1440 150">
+        <path fill="#fff"
+        d="M0,64L80,80C160,96,320,128,480,128C640,128,800,96,960,80C1120,64,1280,64,1360,64L1440,64L1440,160L0,160Z"></path>
+    </svg>
+</div>
+</section>
 
     <section id="sobre">
         <div class="container">
@@ -179,42 +234,120 @@
         </div>
     </section>
 
-    <section id="agendar" class="booking">
-        <div class="container">
-            <h2 class="section-title">Agendar Horário</h2>
-            <div class="booking-grid">
-                <form id="bookingForm">
-                    <input type="text" id="nome" placeholder="Seu nome" required>
-                    <input type="tel" id="telefone" placeholder="Telefone" required>
-                    <select id="servico" required>
-                        <option value="">Escolha um serviço</option>
-                        <option>Perna Inteira</option>
-                        <option>Meia Perna</option>
-                        <option>Contorno Completo</option>
-                        <option>Contorno Simples</option>
-                        <option>Axilas</option>
-                        <option>Buço</option>
-                        <option>Barriga</option>
-                        <option>Costas</option>
-                        <option>Braços</option>
-                        <option>Coxa</option>
-                    </select>
-                    <input type="date" id="data">
-                    <button type="submit">Agendar pelo WhatsApp</button>
-                </form>
-                <div class="map-box">
-                    <iframe src="https://maps.google.com/maps?q=Asa%20Sul%20Brasilia%20DF&t=&z=15&ie=UTF8&iwloc=&output=embed" loading="lazy" allowfullscreen></iframe>
-                    <div class="location-info">
-                        <h3>Nossa Localização</h3>
-                        <p><strong>Studio de Depilação</strong></p>
-                        <p>Asa Sul - Brasília/DF</p>
-                        <p>Atendimento com hora marcada.</p>
-                        <p>WhatsApp: (61) 999013582</p>
-                    </div>
-                </div>
+    <section id="agendar" class="booking-section">
+
+<div class="container">
+
+    <span class="booking-tag">
+         AGENDAMENTO
+    </span>
+
+    <h2 class="booking-title">
+        Agendar Horário
+    </h2>
+
+    <p class="booking-subtitle">
+        Preencha os dados abaixo e fale conosco pelo WhatsApp para garantir seu horário.
+    </p>
+
+    <div class="booking-grid">
+
+        <form id="bookingForm" class="booking-card">
+
+            <div class="booking-header">
+                <h3>Formulário de Agendamento</h3>
+                <p>Preencha seus dados para realizar o agendamento.</p>
             </div>
+
+            <div class="input-row">
+                <input type="text" id="nome" placeholder="Seu nome" required>
+
+                <input type="tel" id="telefone"
+                placeholder="Telefone (WhatsApp)" required>
+            </div>
+
+            <select id="servico" required>
+                <option value="">Escolha um serviço</option>
+                <option>Perna Inteira</option>
+                <option>Meia Perna</option>
+                <option>Contorno Completo</option>
+                <option>Contorno Simples</option>
+                <option>Axilas</option>
+                <option>Buço</option>
+                <option>Barriga</option>
+                <option>Costas</option>
+                <option>Braços</option>
+                <option>Coxa</option>
+            </select>
+
+            <input type="date" id="data">
+
+            <textarea
+                rows="4"
+                id="observacoes"
+                placeholder="Observações (opcional)">
+            </textarea>
+
+            <button type="submit">
+                Agendar pelo WhatsApp
+            </button>
+
+            <div class="security-text">
+                 Seus dados não serão compartilhados.
+            </div>
+
+        </form>
+
+        <div class="booking-card">
+
+            <iframe src="https://maps.google.com/maps?q=Asa%20Sul%20Brasilia%20DF&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            loading="lazy"></iframe>
+
+            <div class="location-info">
+                <h3>Nossa Localização</h3>
+
+                <strong>Studio de Depilação</strong>
+
+                <p>Asa Sul - Brasília/DF</p>
+
+                <p>Atendimento com hora marcada.</p>
+
+                <p>WhatsApp: (61) 99901-3582</p>
+            </div>
+
+            <div class="hours-box">
+                <strong>Horário de Atendimento</strong>
+
+                <p>Segunda à Sábado: 08h às 20h</p>
+            </div>
+
         </div>
-    </section>
+
+    </div>
+
+    <div class="booking-benefits">
+
+        <div>
+             Atendimento Seguro
+        </div>
+
+        <div>
+             Profissional Qualificada
+        </div>
+
+        <div>
+             Horários Flexíveis
+        </div>
+
+        <div>
+             Agendamento Rápido
+        </div>
+
+    </div>
+
+</div>
+
+</section>
 
     <footer>
         <h3>Studio de Depilação</h3>
@@ -223,7 +356,14 @@
         <p>© 2026 Todos os direitos reservados</p>
     </footer>
 
-    <script src="js/"></script>
+    <script src="js/script.js"></script>
 
+    <a href="https://wa.me/5561999013582"
+   class="whatsapp-float"
+   target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<button id="topo">↑</button>
 </body>
 </html>
