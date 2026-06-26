@@ -133,3 +133,21 @@ faqItems.forEach(item => {
 function toggleDarkMode() {
   document.body.classList.toggle("dark");
 }
+let lastScroll = 0;
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+
+    if (!header) return;
+
+    if (currentScroll > lastScroll && currentScroll > 100) {
+        // descendo → esconde
+        header.style.transform = "translateY(-100%)";
+    } else {
+        // subindo → mostra
+        header.style.transform = "translateY(0)";
+    }
+
+    lastScroll = currentScroll;
+});
